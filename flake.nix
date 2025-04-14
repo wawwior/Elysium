@@ -19,6 +19,7 @@
         devShell = pkgs.mkShell {
           buildInputs = with pkgs; [
             jdt-language-server
+            jetbrains.idea-community
           ];
 
           JAVA_HOME = "${jdk21.home}";
